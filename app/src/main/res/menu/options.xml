@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/update"
+            android:title="Update"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/versionn"
+            android:title="Version"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/other_app"
+            android:title="Check Other Apps"
+            app:showAsAction="never" />
+    </group>
+</menu>

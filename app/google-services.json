@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "194828794448",
+    "firebase_url": "https://hitechcall-eeeac.firebaseio.com",
+    "project_id": "hitechcall-eeeac",
+    "storage_bucket": "hitechcall-eeeac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194828794448:android:e833b61b249b247b",
+        "android_client_info": {
+          "package_name": "com.android.hitech.calls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194828794448-ufmdjrg8k4u1fsk68kpfr9pbnmfe4fj7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.hitech.calls",
+            "certificate_hash": "75aa3ade33b3ffe628e2225398eb0ba4d0d0eab5"
+          }
+        },
+        {
+          "client_id": "194828794448-d16g83t83kkj8nnbq5nl4bnfmmggmon7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5IMmRtamq5-m2cMyPgjsI9nqcOx_USRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194828794448-d16g83t83kkj8nnbq5nl4bnfmmggmon7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

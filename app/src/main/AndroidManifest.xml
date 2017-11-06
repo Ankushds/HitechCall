@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.hitech.calls">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.Login"
+            android:theme="@style/loginTheme" />
+        <activity android:name=".call_logs.Version" />
+
+        <activity
+            android:name=".login.MainPagerActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".meeting.Phonemeeting"
+            android:parentActivityName=".homepage.Home_nav"
+            android:theme="@style/account"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".homepage.Home_nav"
+            android:label="@string/title_activity_home_nav" />
+
+        <activity
+            android:name=".Alert_popup.AddCall1"
+            android:parentActivityName=".homepage.Home_nav"
+            android:theme="@style/account"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Alert_popup.MyCustomDialog"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".meeting.Meeting_Main_Exp"
+            android:exported="true"
+            android:parentActivityName=".homepage.Home_nav"
+            android:theme="@style/account" />
+
+        <receiver android:name=".Unused.CallReceiver">
+            <intent-filter>
+                <action android:name="finishMeeting" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".dashboard.BoottimeBroadcast"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAu-PVvLUnD0iggdqxJt8a6tak4O6rdGu0" />
+
+        <activity
+            android:name=".Location.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".homepage.Home_nav"
+            android:theme="@style/account" />
+
+        <activity android:name=".Alert_popup.NotificationView" />
+
+        <activity
+            android:name=".NearByAccounts.NewCodeExpandable"
+            android:exported="true"
+            android:parentActivityName=".Location.MapsActivity"
+            android:theme="@style/account" />
+        <activity
+            android:name=".meeting.ShowTrackingData"
+            android:exported="true"
+            android:parentActivityName=".meeting.Meeting_Main_Exp"
+            android:theme="@style/account" />
+
+        <service
+            android:name=".Location.Servicebackground"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".meeting.MyMeetingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.hitech.calls.MyMeetingService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Unused.MyRecordingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.android.hitech.calls.MyRecordingService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

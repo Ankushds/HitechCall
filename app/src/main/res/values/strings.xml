@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">HitechCall</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_nav">Home</string>
+    <string name="schedule">Schedule Meeting</string>
+    <string name="nearby">"      "Accounts"     "</string>
+    <string name="meetings">"  "My Meetings"  "</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="date">%1$s-%2$s-%3$s</string>
+    <string name="time">%1$s:%2$s</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="clientCall">
+        <item>Introductory Call</item>
+        <item>Meeting Call</item>
+        <item>New POC-Client Call</item>
+        <item>Agreement Call</item>
+        <item>Position Call</item>
+        <item>Offer and Joining</item>
+    </string-array>
+
+    <string-array name="introductoryCall">
+        <item>Briefing and Profile Sharing</item>
+        <item>Proposal Shared</item>
+        <item>Profile and Proposal Sharing</item>
+        <item>Follow up call</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="meetingCall">
+        <item>Meeting Scheduled Date</item>
+        <item>Meeting Re-Scheduled Date</item>
+        <item>Vendor meet confirmation</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="pOCClientCall">
+        <item>GH POC Introduction</item>
+        <item>Briefing and Profile Sharing</item>
+        <item>Hiring Plan</item>
+        <item>New Position Discussion</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="agreementCall">
+        <item>Agreement Negotiation</item>
+        <item>Agreement Signup and Empanellement</item>
+        <item>Agreement Renewal</item>
+        <item>Agrrement Sign Copy Follow up</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="positionCall">
+        <item>Position Download and clarification</item>
+        <item>Feedback on resume</item>
+        <item>Interview Follow up</item>
+        <item>Escalation Management</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="offerJoining">
+        <item>Offer Negotiation</item>
+        <item>Offer Confirmation</item>
+        <item>Joining Confirmation</item>
+        <item>CTC Follow up</item>
+        <item>Invoicing  and PO Follow Up</item>
+        <item>Collection Follow up</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="candidateCAll">
+        <item>Job Call</item>
+        <item>Feedback Call</item>
+        <item>Interview Call</item>
+        <item>Document Follow Up Call</item>
+        <item>Offer and Joining call</item>
+    </string-array>
+
+    <string-array name="jobCall">
+        <item>GH, client and JD Briefing </item>
+        <item>JD mail receipt Confirmation and specific details from Candidate</item>
+        <item>Follow up for Consent</item>
+        <item>Other (blank box mandatory field)</item>
+    </string-array>
+
+    <string-array name="feedbackCall">
+        <item>Shortlisting/Rejection update to the candidate</item>
+        <item>Availibility of Candidate for Telecon/Face to Face</item>
+        <item>Interview(Telecon/F2F/VC/Test) Feedback  from the Candidate</item>
+    </string-array>
+
+    <string-array name="interviewCall">
+        <item>Availibility of Candidate for Telecon/Face to Face</item>
+        <item>Interview Confirmation Call</item>
+        <item>Interview Follow up Call</item>
+    </string-array>
+
+    <string-array name="offeJoinCall">
+        <item>Offer Negotiation</item>
+        <item>Offer Acceptance</item>
+        <item>Resignation Acceptance copy from current organization</item>
+        <item>Joining Date Confirmation</item>
+        <item>Joining Follow up</item>
+        <item>Joining Confirmation</item>
+        <item>Replacement Guarantee 90-180 days follow up</item>
+    </string-array>
+
+    <item name="infoItem" type="id"/>
+    <item name="stopMeet" type="id"/>
+</resources>
+
